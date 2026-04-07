@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASMobbin — Software House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">ASM<span>obbin</span></a>
+      <nav class="nav__links">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn--primary">Get a Quote</a>
+      <button class="nav__hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="badge">Software House ✦</span>
+        <h1>We craft software<br /><em>that actually works.</em></h1>
+        <p>From mobile apps to enterprise platforms, we build clean, scalable digital products that your users will love and your team can maintain.</p>
+        <div class="hero__cta">
+          <a href="#work" class="btn btn--primary">See Our Work</a>
+          <a href="#about" class="btn btn--ghost">Learn About Us</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__blob blob--1"></div>
+        <div class="hero__blob blob--2"></div>
+        <div class="hero__card card--1">
+          <div class="card-dot dot--green"></div>
+          <span>Project Deployed</span>
+          <strong>MobiPay v2.0</strong>
+        </div>
+        <div class="hero__card card--2">
+          <div class="card-dot dot--purple"></div>
+          <span>New Sprint Started</span>
+          <strong>DataDash MVP</strong>
+        </div>
+        <div class="hero__card card--3">
+          <div class="card-dot dot--pink"></div>
+          <span>Client Satisfaction</span>
+          <strong>98%</strong>
+        </div>
+        <div class="hero__window">
+          <div class="window__bar">
+            <span class="w-dot"></span><span class="w-dot"></span><span class="w-dot"></span>
+          </div>
+          <div class="window__code">
+            <div class="code-line"><em class="kw">const</em> <span class="fn">buildProduct</span> = <em class="kw">async</em> () =&gt; &#123;</div>
+            <div class="code-line indent"><em class="kw">const</em> idea = <em class="str">await</em> client.brief();</div>
+            <div class="code-line indent"><em class="kw">const</em> product = <em class="str">await</em> asm.craft(idea);</div>
+            <div class="code-line indent"><em class="kw">return</em> product.launch();</div>
+            <div class="code-line">&#125;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__stats">
+      <div class="container stats__inner">
+        <div class="stat"><strong>120+</strong><span>Projects Shipped</span></div>
+        <div class="stat__divider"></div>
+        <div class="stat"><strong>8+</strong><span>Years of Experience</span></div>
+        <div class="stat__divider"></div>
+        <div class="stat"><strong>40+</strong><span>Happy Clients</span></div>
+        <div class="stat__divider"></div>
+        <div class="stat"><strong>15</strong><span>Team Members</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge--mint">What We Do</span>
+        <h2>End-to-end<br />software solutions</h2>
+        <p>We handle everything from discovery and design to development and deployment — all under one roof.</p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card" style="--accent: #c8b6ff;">
+          <div class="service-card__icon">&#128241;</div>
+          <h3>Mobile Development</h3>
+          <p>Native iOS & Android apps and cross-platform solutions using React Native and Flutter, built for performance and usability.</p>
+          <ul>
+            <li>iOS & Android</li>
+            <li>React Native</li>
+            <li>Flutter</li>
+          </ul>
+        </div>
+        <div class="service-card" style="--accent: #b5ead7;">
+          <div class="service-card__icon">&#128187;</div>
+          <h3>Web Applications</h3>
+          <p>Scalable web apps with modern frameworks. From SaaS platforms to internal tools, built to grow with your business.</p>
+          <ul>
+            <li>React / Next.js</li>
+            <li>Vue / Nuxt</li>
+            <li>Node.js APIs</li>
+          </ul>
+        </div>
+        <div class="service-card" style="--accent: #ffd6e0;">
+          <div class="service-card__icon">&#9729;</div>
+          <h3>Cloud & DevOps</h3>
+          <p>Infrastructure that scales. We architect, deploy, and manage cloud environments so you can focus on your product.</p>
+          <ul>
+            <li>AWS / GCP / Azure</li>
+            <li>CI/CD Pipelines</li>
+            <li>Docker & K8s</li>
+          </ul>
+        </div>
+        <div class="service-card" style="--accent: #ffeaa7;">
+          <div class="service-card__icon">&#127775;</div>
+          <h3>UI/UX Design</h3>
+          <p>Beautiful, intuitive interfaces backed by user research. Design systems, prototypes, and handoff-ready assets.</p>
+          <ul>
+            <li>Figma & Prototyping</li>
+            <li>Design Systems</li>
+            <li>User Research</li>
+          </ul>
+        </div>
+        <div class="service-card" style="--accent: #c8b6ff;">
+          <div class="service-card__icon">&#129302;</div>
+          <h3>AI Integration</h3>
+          <p>Bring intelligence to your product. We integrate LLMs, build RAG pipelines, and create AI-powered features that delight users.</p>
+          <ul>
+            <li>LLM Integration</li>
+            <li>RAG Pipelines</li>
+            <li>Custom ML Models</li>
+          </ul>
+        </div>
+        <div class="service-card" style="--accent: #b5ead7;">
+          <div class="service-card__icon">&#128736;</div>
+          <h3>Maintenance & Support</h3>
+          <p>Long-term partnership. We provide monitoring, updates, and iterative improvements to keep your software healthy.</p>
+          <ul>
+            <li>24/7 Monitoring</li>
+            <li>Bug Fixes & Updates</li>
+            <li>Performance Tuning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge--purple">Our Work</span>
+        <h2>Products we're<br />proud of</h2>
+        <p>A selection of projects where we went from idea to shipped product.</p>
+      </div>
+      <div class="work__grid">
+        <div class="project-card project-card--wide" style="--bg: #ede7ff;">
+          <div class="project-card__content">
+            <span class="project-tag">Mobile App</span>
+            <h3>MobiPay</h3>
+            <p>A fintech super-app enabling peer-to-peer payments, bill splitting, and savings goals for 200k+ users across Southeast Asia.</p>
+            <div class="project-meta">
+              <span>React Native</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+          <div class="project-card__mockup mockup--mobipay">
+            <div class="phone-frame">
+              <div class="phone-screen">
+                <div class="phone-ui">
+                  <div class="phone-header">&#128176; MobiPay</div>
+                  <div class="phone-balance">$4,820.00</div>
+                  <div class="phone-label">Available Balance</div>
+                  <div class="phone-actions">
+                    <div class="phone-btn">Send</div>
+                    <div class="phone-btn">Pay</div>
+                    <div class="phone-btn">Top Up</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" style="--bg: #d4f5e9;">
+          <div class="project-card__content">
+            <span class="project-tag">SaaS Platform</span>
+            <h3>DataDash</h3>
+            <p>Real-time analytics dashboard for e-commerce brands to track, visualize, and act on their sales data.</p>
+            <div class="project-meta">
+              <span>Next.js</span>
+              <span>Python</span>
+              <span>Redis</span>
+            </div>
+          </div>
+          <div class="project-card__mockup mockup--dashboard">
+            <div class="dash-window">
+              <div class="dash-bar"><span></span><span></span><span></span></div>
+              <div class="dash-body">
+                <div class="dash-chart">
+                  <div class="bar" style="height:60%"></div>
+                  <div class="bar" style="height:80%"></div>
+                  <div class="bar" style="height:50%"></div>
+                  <div class="bar" style="height:90%"></div>
+                  <div class="bar" style="height:70%"></div>
+                  <div class="bar" style="height:85%"></div>
+                </div>
+                <div class="dash-stat">Revenue ↑ 24%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" style="--bg: #ffe4ec;">
+          <div class="project-card__content">
+            <span class="project-tag">Enterprise</span>
+            <h3>LogiTrack</h3>
+            <p>Fleet and logistics management platform reducing delivery delays by 35% for a regional courier company.</p>
+            <div class="project-meta">
+              <span>Vue.js</span>
+              <span>Go</span>
+              <span>AWS</span>
+            </div>
+          </div>
+          <div class="project-card__mockup mockup--logi">
+            <div class="map-frame">
+              <div class="map-grid"></div>
+              <div class="map-dot dot-a"></div>
+              <div class="map-dot dot-b"></div>
+              <div class="map-dot dot-c"></div>
+              <div class="map-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge--pink">How We Work</span>
+        <h2>From idea to<br />launch in sprints</h2>
+      </div>
+      <div class="process__steps">
+        <div class="step">
+          <div class="step__num">01</div>
+          <div class="step__body">
+            <h3>Discovery</h3>
+            <p>We learn your business goals, users, and constraints through workshops and stakeholder interviews.</p>
+          </div>
+        </div>
+        <div class="step__arrow">&#8594;</div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <div class="step__body">
+            <h3>Design</h3>
+            <p>Wireframes and interactive prototypes so you can see and test the product before a line of code is written.</p>
+          </div>
+        </div>
+        <div class="step__arrow">&#8594;</div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <div class="step__body">
+            <h3>Build</h3>
+            <p>Iterative development in 2-week sprints with continuous delivery and weekly demos to keep you in the loop.</p>
+          </div>
+        </div>
+        <div class="step__arrow">&#8594;</div>
+        <div class="step">
+          <div class="step__num">04</div>
+          <div class="step__body">
+            <h3>Launch & Grow</h3>
+            <p>Smooth deployment, monitoring setup, and ongoing support to help your product evolve as your users grow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__text">
+        <span class="badge badge--mint">About Us</span>
+        <h2>A team obsessed<br />with good software</h2>
+        <p>Founded in 2016, ASMobbin is a boutique software house built by engineers who got tired of slow, bloated dev shops. We stay small on purpose — every project gets senior-level attention from kickoff to launch.</p>
+        <p>We believe software should be a joy to use, easy to maintain, and built to last. That means clean code, honest communication, and no feature bloat.</p>
+        <div class="about__values">
+          <div class="value-chip">&#128247; Pixel-perfect UI</div>
+          <div class="value-chip">&#128274; Security-first</div>
+          <div class="value-chip">&#9889; Performance obsessed</div>
+          <div class="value-chip">&#129309; Transparent process</div>
+        </div>
+      </div>
+      <div class="about__team">
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="avatar avatar--blue">AS</div>
+            <strong>Ahmad Syahril</strong>
+            <span>Co-founder & CEO</span>
+          </div>
+          <div class="team-card">
+            <div class="avatar avatar--pink">MO</div>
+            <strong>Maya Olivia</strong>
+            <span>Co-founder & CTO</span>
+          </div>
+          <div class="team-card">
+            <div class="avatar avatar--mint">RN</div>
+            <strong>Reza Nugroho</strong>
+            <span>Lead Engineer</span>
+          </div>
+          <div class="team-card">
+            <div class="avatar avatar--purple">LK</div>
+            <strong>Lila Kusuma</strong>
+            <span>Head of Design</span>
+          </div>
+        </div>
+        <div class="about__badge-float">
+          <div class="float-badge">
+            <span class="float-num">15</span>
+            <span>Talented people<br />building great things</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge--yellow">Kind Words</span>
+        <h2>What our clients say</h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"ASMobbin delivered our app ahead of schedule and under budget. The code quality was outstanding and the team communicated clearly throughout. Highly recommend."</p>
+          <div class="testimonial-author">
+            <div class="avatar avatar--blue" style="width:40px;height:40px;font-size:0.8rem;">DL</div>
+            <div>
+              <strong>Daniel Lim</strong>
+              <span>CEO, MobiPay</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card testimonial-card--featured">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Working with ASMobbin felt like having an in-house team — they understood our business, challenged bad ideas, and shipped something we're genuinely proud of."</p>
+          <div class="testimonial-author">
+            <div class="avatar avatar--pink" style="width:40px;height:40px;font-size:0.8rem;">SA</div>
+            <div>
+              <strong>Siti Aisyah</strong>
+              <span>Founder, DataDash</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"They redesigned our entire logistics platform in 4 months. The new system cut our operational errors in half. Can't imagine working with anyone else now."</p>
+          <div class="testimonial-author">
+            <div class="avatar avatar--mint" style="width:40px;height:40px;font-size:0.8rem;">BR</div>
+            <div>
+              <strong>Budi Raharjo</strong>
+              <span>COO, LogiTrack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__blob"></div>
+      <div class="contact__text">
+        <h2>Ready to build<br />something great?</h2>
+        <p>Tell us about your project. We'll reply within 24 hours with an honest assessment and rough estimate — no strings attached.</p>
+        <div class="contact__info">
+          <a href="mailto:hello@asmobbin.com">&#128231; hello@asmobbin.com</a>
+          <a href="tel:+60123456789">&#128222; +60 12-345 6789</a>
+        </div>
+      </div>
+      <form class="contact__form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Jane Smith" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="jane@company.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">What do you need?</label>
+          <select id="service">
+            <option value="">Select a service</option>
+            <option>Mobile Development</option>
+            <option>Web Application</option>
+            <option>UI/UX Design</option>
+            <option>Cloud & DevOps</option>
+            <option>AI Integration</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us about your project</label>
+          <textarea id="message" rows="4" placeholder="What are you building? What's your timeline and budget range?"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Message &#8594;</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">ASM<span>obbin</span></a>
+        <p>Boutique software house crafting digital products people love.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Services</h4>
+          <a href="#services">Mobile Development</a>
+          <a href="#services">Web Applications</a>
+          <a href="#services">UI/UX Design</a>
+          <a href="#services">AI Integration</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#about">About Us</a>
+          <a href="#work">Our Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter / X</a>
+          <a href="#">Dribbble</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>&copy; 2026 ASMobbin Sdn Bhd. All rights reserved.</span>
+        <span>Made with &#10084;&#65039; in Kuala Lumpur</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
